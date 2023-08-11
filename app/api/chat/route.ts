@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     'content': process.env.PROMPT
   }, ...histories.slice(-3, -1), {
     'role': 'user',
-    'content': `用戶輸入：${question}`
+    'content': `用戶輸入：${question}用撒嬌語氣回答`
   }]
 
   const res = await openai.createChatCompletion({
